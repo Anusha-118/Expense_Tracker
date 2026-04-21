@@ -1,0 +1,74 @@
+# 💎 FlowFi — Personal Finance Tracker
+
+A full-stack personal finance web application built with **Python** and **Flask**.  
+Track income, expenses, set budgets, and visualize your spending — all in one place.
+
+> Built as part of the DekNek Full Stack Developer Internship assignment.
+
+
+
+#Features
+
+- 🔐 **User Authentication** — Signup, Login, Logout with secure password hashing
+- 💸 **Transaction Management** — Add, Edit, Delete income and expense transactions
+- 🔍 **Search & Filter** — Filter by month, type, category, or keyword
+- 📊 **Dashboard** — Summary cards, bar charts, pie charts, and recent transactions
+- 🎯 **Budget Goals** — Set monthly spending limits per category with progress tracking
+- 📈 **Reports** — Yearly income vs expense trends, savings analysis, category breakdowns
+- 💡 **Smart Insights** — Automatic tips based on your spending patterns
+- 🗄️ **Database** — All data stored persistently per user
+
+---
+
+## 🛠️ Tech Stack
+
+### Backend
+| Technology | Purpose |
+|---|---|
+| Python 3
+| **Flask** | Web framework — routes, pages, REST API |
+| **Flask-SQLAlchemy** | ORM — connects Python models to the database |
+| **Flask-Bcrypt** | Secure password hashing |
+| **Flask Sessions** | User authentication & login state management |
+| **SQLite** | Local development database |
+| **PostgreSQL** | Production database (via Supabase) |
+| **Gunicorn** | WSGI production server for deployment |
+| **python-dotenv** | Environment variable management |
+
+### Frontend
+| Technology | Purpose |
+|---|---|
+| **HTML5** | Page structure and markup |
+| **CSS3** | Custom styling — animations, glassmorphism, gradients |
+| **Vanilla JavaScript** | Interactivity — API calls, modals, dynamic rendering |
+| **Jinja2** | Flask's templating engine for dynamic HTML |
+| **Chart.js** | Interactive bar, pie, doughnut, and line charts |
+| **Google Fonts** | `Outfit` + `JetBrains Mono` typography |
+
+# Deployment
+**GitHub** Version control and source code 
+
+
+
+
+# Project Structure
+
+```
+flowfi/
+├── app.py                  # Main Flask app — all routes, models, API
+├── requirements.txt        # Python dependencies
+├── Procfile                # Render deployment config
+├── .env.example            # Environment variable template
+├── .gitignore
+└── templates/
+    ├── base.html           # Shared layout, sidebar, styles
+    ├── login.html          # Login page
+    ├── signup.html         # Signup page
+    ├── dashboard.html      # Main dashboard with charts
+    ├── transactions.html   # Transaction list with search & filters
+    ├── budgets.html        # Budget goals with progress bars
+    ├── reports.html        # Yearly reports & trends
+    ├── tx_modal.html       # Add/Edit transaction modal (shared)
+    └── tx_modal_js.html    # Modal JavaScript logic (shared)
+```
+
